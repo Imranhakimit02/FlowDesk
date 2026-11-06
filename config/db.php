@@ -11,8 +11,8 @@
 // ----------------------------------
 // SECTION: Database configuration
 // ----------------------------------
-$host = '127.0.0.1';
-$dbname = 'flowdeskdb';
+$host = 'your_host_ip';
+$dbname = 'your_db_name';
 $username = 'root';
 $password = '';
 $charset = 'utf8mb4';
