@@ -1,6 +1,6 @@
 # FlowDesk
 
-A PHP and MySQL/MariaDB ticket management application with configurable approval workflows, department routing, and staff assignment.
+A PHP and MySQL ticket management application with configurable approval workflows, department routing, and staff assignment.
 
 ## Features
 
@@ -14,16 +14,15 @@ A PHP and MySQL/MariaDB ticket management application with configurable approval
 
 ## Project status
 
-This repository currently contains the application source code. **A database schema and fictional demo seed data are not included yet. A fresh clone cannot run successfully without a compatible database.** The instructions below explain the setup once that database is available; they are not a verified fresh-install procedure yet.
+This repository currently contains the application source code. The instructions below explain the setup. There is also database .sql file provided for testing.
 
-This version is intended for local evaluation. Staff and HOD access uses an email selection and on-screen confirmation flow; it does not prove ownership through an emailed verification link. Administrator access uses a username and hashed password. Review authentication and authorization before exposing an instance publicly.
+This version is intended for local evaluation. Staff and HOD access uses an email selection and on-screen confirmation flow. It does not prove ownership through an emailed verification link. Administrator access uses a username and hashed password. Review authentication and authorization before exposing an instance publicly.
 
 ## Technology
 
-- PHP with PDO and the PDO MySQL driver
-- MySQL or MariaDB
-- HTML, CSS, JavaScript, and Bootstrap 5.3.2
-- Bootstrap and Google Fonts loaded from external services
+- PHP
+- MySQL
+- HTML, CSS, JavaScript, and Bootstrap
 
 No Composer or npm installation is required by the current source tree. Internet access is needed to load the external styles, scripts, and fonts.
 
@@ -103,23 +102,3 @@ Once demo data is installed:
 - **No request categories or approvers:** Configure the required records and workflow mappings through the administrator tools or demo dataset.
 - **Attachment upload fails:** Check directory permissions and PHP's `file_uploads`, `upload_max_filesize`, and `post_max_size` settings.
 - **Page is unstyled:** Check connectivity to the external Bootstrap and Google Fonts services.
-
-## Publishing and portfolio
-
-The repository's configured GitHub remote is [Imranhakimit02/ticket_system](https://github.com/Imranhakimit02/ticket_system). Repository visibility and remote contents have not been verified as part of this documentation update.
-
-Before inviting others to install the project:
-
-- Add a sanitized schema export, fictional demo seed data, and demo account instructions.
-- Verify the entire setup on an empty database and record the PHP and database versions tested.
-- Review committed files and Git history for private information. A PDF is currently tracked under `uploads/`; review it before making the repository public. Adding an ignore rule alone does not remove already tracked files or historical copies.
-- Keep real user records, company data, attachments, credentials, and private database exports out of the public repository.
-- Add screenshots using fictional data and choose a license if you want to grant others permission to reuse the code.
-
-On your portfolio, add a FlowDesk project card with a screenshot, a short description, the technology stack, and a **View source** link to the GitHub repository. Visitors can follow this README for local setup once the database assets are included.
-
-Suggested description:
-
-> FlowDesk is a PHP and MySQL ticket management application with configurable approval workflows, department-based routing, staff assignment, and ticket tracking.
-
-If you later provide a hosted instance, add a separate **Live demo** link. Running the complete application requires a PHP server and a database. Until a hosted demo is available, screenshots or a recorded walkthrough can demonstrate the workflow directly from your portfolio.
